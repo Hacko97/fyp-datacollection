@@ -474,6 +474,7 @@ for file in onlyfiles:
         sentence_count =0
 	#gc.collect()
         for line in f1:
+            gc.collect()
             sentence_count+=1
             sentence = line.strip('"')
 
