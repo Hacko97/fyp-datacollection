@@ -266,8 +266,7 @@ def depTag(data_input,nlp):
                     
                     if find_morphemes(word.text) != 0:
                         morphs = find_morphemes(word.text)
-                     
-                        #print("inside finding")
+                        right_tag = morphs[0][-1]#print("inside finding")
                         if len(morphs) == 1 and len(morphs[0])>0:
                             
                             if morphs[0][-1] in dict.keys():
@@ -314,15 +313,14 @@ def depTag(data_input,nlp):
                         
                                                 
                         elif len(morphs) > 1:
-    
+    			    #right_tag = morphs[0][-1]#print("inside finding")
                             if morphs[0][-1] in dict.keys():
                                 lst = dict[ morphs[0][-1]]
-                                right_tag = morphs[0][-1]
+                                
                                 for tag in lst:
                                     t = morphs[0]#strm.split("+")
                                     t[-1] = tag
                                     change = '+'.join(t).strip()
-                                #print(change)
                                     changed_word =[]
                                 
                                     for fst in fsts_files:
@@ -330,12 +328,8 @@ def depTag(data_input,nlp):
                                         _fst = FST.from_file(file_name)
                                         _verbfst = list(_fst.generate(change))
                                         changed_word += _verbfst
-
-                                #print(changed_word)
                                     if len(changed_word) == 0:
-                                        #print("inguess")
                                         changed_word += list(verbfst.generate(change))
-                                #print(changed_word)
                                     if len(changed_word) == 1:
                                         word.text = changed_word[0]
                                         changed_sent = make_sent(sent)#sent.text #make_sent(sent)
@@ -356,11 +350,6 @@ def depTag(data_input,nlp):
                                 
                                     else:
                                         None#print("Hi")
-                                # change_verb(strm,word,sent,data_input,tag=tag,right_tag=morph[0][-1])
-                        
-                       
-                        
-                       
                         else:
                             None #print("inside_fineding not have morphemes")
                     else:
@@ -368,7 +357,7 @@ def depTag(data_input,nlp):
                             
                             #print("inside guessing")
                             morphs = guess_morphemes(word.text) 
-                           
+                            right_tag = morphs[0][-1]
                             if len(morphs) == 1 and len(morphs[0])>0:
                                 #print("in")
                                 
@@ -418,7 +407,7 @@ def depTag(data_input,nlp):
                          
                             elif len(morphs) > 1:
                                 
-                                
+                                right_tag = morphs[0][-1]
                                 if morphs[0][-1] in dict.keys():
                                     lst = dict[ morphs[0][-1]]
                                     for tag in lst:
@@ -468,7 +457,7 @@ def depTag(data_input,nlp):
 
 from os import listdir
 from os.path import isfile, join
-
+import gc
 #mypath = "./data/"
 #onlyfiles = []
 #for f in listdir(mypath):
@@ -476,13 +465,14 @@ from os.path import isfile, join
 #        onlyfiles.append(f)
 #print(depTag(sentence,depModel))
 #files = #['train_final.tsv']#,'valid_2.tsv']#['test.tsv','test_1.tsv','test_2.tsv','test_3.tsv','test_4.tsv','test_5.tsv','test_6.tsv','test_7.tsv','test_8.tsv','hiru news.txt']# 'train_new_20.tsv','train_new_71.tsv','train_new_30.tsv','train_new_63.tsv', 'train_new_1.tsv','train_new_2.tsv', 'train_new_87.tsv', 'train_new_3.tsv', 'train_new_43.tsv', 
-onlyfiles = [ 'train_new_79.tsv', 'train_new_66.tsv', 'train_new_32.tsv', 'train_new_15.tsv', 'train_new_25.tsv', 'train_new_44.tsv', 'train_new_34.tsv', 'train_new_28.tsv', 'train_new_8.tsv', 'train_new_46.tsv', 'train_new_27.tsv', 'train_new_69.tsv', 'train_new_38.tsv', 'train_new_86.tsv', 'train_new_76.tsv', 'train_new_26.tsv', 'train_new_83.tsv', 'train_new_61.tsv', 'train_new_55.tsv', 'train_new_0.tsv', 'train_new_81.tsv', 'train_new_82.tsv', 'train_new_77.tsv', 'train_new_65.tsv', 'train_new_62.tsv', 'train_new_52.tsv', 'train_new_48.tsv', 'train_new_18.tsv', 'train_new_7.tsv', 'train_new_75.tsv', 'train_new_19.tsv', 'train_new_35.tsv', 'train_new_31.tsv', 'train_new_21.tsv', 'train_new_68.tsv', 'train_new_12.tsv', 'train_new_9.tsv', 'train_new_42.tsv', 'train_new_29.tsv', 'train_new_11.tsv', 'train_new_17.tsv', 'train_new_60.tsv', 'train_new_67.tsv', 'train_new_37.tsv', 'train_new_70.tsv', 'train_new_23.tsv', 'train_new_6.tsv', 'train_new_78.tsv', 'train_new_16.tsv', 'train_new_33.tsv', 'train_new_59.tsv', 'train_new_88.tsv', 'train_new_56.tsv', 'train_new_74.tsv', 'train_new_13.tsv', 'train_new_54.tsv', 'train_new_49.tsv', 'train_new_22.tsv', 'train_new_80.tsv', 'train_new_39.tsv', 'train_new_50.tsv', 'train_new_5.tsv', 'train_new_24.tsv', 'train_new_14.tsv', 'train_new_64.tsv', 'train_new_73.tsv', 'train_new_41.tsv', 'train_new_45.tsv', 'train_new_51.tsv', 'train_new_58.tsv', 'train_new_36.tsv', 'train_new_84.tsv', 'train_new_47.tsv', 'train_new_4.tsv', 'train_new_53.tsv', 'train_new_85.tsv', 'train_new_72.tsv', 'train_new_10.tsv', 'train_new_40.tsv', 'train_new_57.tsv']
+onlyfiles = ['train_new_84.tsv', 'train_new_47.tsv', 'train_new_4.tsv', 'train_new_53.tsv', 'train_new_85.tsv', 'train_new_72.tsv', 'train_new_10.tsv', 'train_new_40.tsv', 'train_new_57.tsv']
 for file in onlyfiles:
+        gc.collect()
         f1=open("./data/"+file,"r",encoding='UTF-8')
         f2 = open("./train/"+"train_"+file.split(".")[0]+".tsv", "a",encoding='UTF-8')
         print("Starting with file: "+file)
         sentence_count =0
-
+	#gc.collect()
         for line in f1:
             sentence_count+=1
             sentence = line.strip('"')
