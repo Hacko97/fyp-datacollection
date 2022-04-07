@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 2022-04-07 15:53:21 INFO: Loading these models for language: ta (Tamil):
+=======
+2022-04-07 15:56:43 INFO: Loading these models for language: ta (Tamil):
+>>>>>>> 0f9fefef30d5dda73b61e8dd8c260a097498fc89
 =======================================
 | Processor | Package                 |
 ---------------------------------------
@@ -9,6 +13,7 @@
 | depparse  | /home/azur...epparse.pt |
 =======================================
 
+<<<<<<< HEAD
 2022-04-07 15:53:21 INFO: Use device: cpu
 2022-04-07 15:53:21 INFO: Loading: tokenize
 2022-04-07 15:53:21 INFO: Loading: mwt
@@ -16,3 +21,12 @@
 2022-04-07 15:53:26 INFO: Loading: lemma
 2022-04-07 15:53:26 INFO: Loading: depparse
 2022-04-07 15:53:28 INFO: Done loading processors!
+=======
+2022-04-07 15:56:43 INFO: Use device: cpu
+2022-04-07 15:56:43 INFO: Loading: tokenize
+2022-04-07 15:56:43 INFO: Loading: mwt
+2022-04-07 15:56:43 INFO: Loading: pos
+2022-04-07 15:56:48 INFO: Loading: lemma
+2022-04-07 15:56:48 INFO: Loading: depparse
+2022-04-07 15:56:50 INFO: Done loading processors!
+>>>>>>> 0f9fefef30d5dda73b61e8dd8c260a097498fc89
