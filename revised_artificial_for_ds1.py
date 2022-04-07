@@ -308,8 +308,7 @@ onlyfiles = [ 'train_new_38.tsv', 'train_new_86.tsv', 'train_new_76.tsv', 'train
    'train_new_9.tsv', 'train_new_42.tsv', 'train_new_29.tsv', 'train_new_11.tsv', 'train_new_17.tsv', 'train_new_60.tsv',
     'train_new_67.tsv', 'train_new_37.tsv', 'train_new_70.tsv', 'train_new_23.tsv', 'train_new_6.tsv', 'train_new_78.tsv',
      'train_new_16.tsv', 'train_new_33.tsv', 'train_new_59.tsv', 'train_new_88.tsv', 'train_new_56.tsv', 'train_new_74.tsv',
-      'train_new_13.tsv', 'train_new_54.tsv', 'train_new_49.tsv', 'train_new_22.tsv', 'train_new_80.tsv', 'train_new_39.tsv',
-       'train_new_50.tsv' ]
+      'train_new_13.tsv', 'train_new_54.tsv', 'train_new_49.tsv', 'train_new_22.tsv' ]
 for file in onlyfiles:
         f1=open("./data/"+file,"r",encoding='UTF-8')
         f2 = open("./train/"+"train_"+file.split(".")[0]+".tsv", "a",encoding='UTF-8')
