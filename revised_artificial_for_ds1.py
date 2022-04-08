@@ -323,6 +323,8 @@ for file in onlyfiles:
                 time.sleep(5)
                 print(sentence_count)
         print("Ending file: "+file)
+        f2.close()
+        f1.close()
     
 
 
