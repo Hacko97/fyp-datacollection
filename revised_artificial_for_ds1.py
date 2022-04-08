@@ -306,9 +306,7 @@ onlyfiles = [ 'train_new_83.tsv', 'train_new_61.tsv',
  'train_new_62.tsv', 'train_new_52.tsv', 'train_new_48.tsv', 'train_new_18.tsv', 'train_new_7.tsv', 'train_new_75.tsv',
   'train_new_19.tsv', 'train_new_35.tsv', 'train_new_31.tsv', 'train_new_21.tsv', 'train_new_68.tsv', 'train_new_12.tsv',
    'train_new_9.tsv', 'train_new_42.tsv', 'train_new_29.tsv', 'train_new_11.tsv', 'train_new_17.tsv', 'train_new_60.tsv',
-    'train_new_67.tsv', 'train_new_37.tsv', 'train_new_70.tsv', 'train_new_23.tsv', 'train_new_6.tsv', 'train_new_78.tsv',
-     'train_new_16.tsv', 'train_new_33.tsv', 'train_new_59.tsv', 'train_new_88.tsv', 'train_new_56.tsv', 'train_new_74.tsv',
-      'train_new_13.tsv', 'train_new_54.tsv' ]
+    'train_new_67.tsv', 'train_new_37.tsv', 'train_new_70.tsv', 'train_new_23.tsv', 'train_new_6.tsv' ]
 for file in onlyfiles:
         f1=open("./data/"+file,"r",encoding='UTF-8')
         f2 = open("./train/"+"train_"+file.split(".")[0]+".tsv", "a",encoding='UTF-8')
@@ -325,6 +323,8 @@ for file in onlyfiles:
                 time.sleep(5)
                 print(sentence_count)
         print("Ending file: "+file)
+        f2.close()
+        f1.close()
     
 
 
