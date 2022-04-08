@@ -30,3 +30,21 @@
 2022-04-07 15:56:48 INFO: Loading: depparse
 2022-04-07 15:56:50 INFO: Done loading processors!
 >>>>>>> 0f9fefef30d5dda73b61e8dd8c260a097498fc89
+2022-04-07 18:00:12 INFO: Loading these models for language: ta (Tamil):
+=======================================
+| Processor | Package                 |
+---------------------------------------
+| tokenize  | /home/azur...kenizer.pt |
+| mwt       | /home/azur...zhi_mwt.pt |
+| pos       | /home/azur...zhi_pos.pt |
+| lemma     | /home/azur...i_lemma.pt |
+| depparse  | /home/azur...epparse.pt |
+=======================================
+
+2022-04-07 18:00:12 INFO: Use device: cpu
+2022-04-07 18:00:12 INFO: Loading: tokenize
+2022-04-07 18:00:12 INFO: Loading: mwt
+2022-04-07 18:00:12 INFO: Loading: pos
+2022-04-07 18:00:16 INFO: Loading: lemma
+2022-04-07 18:00:16 INFO: Loading: depparse
+2022-04-07 18:00:18 INFO: Done loading processors!
