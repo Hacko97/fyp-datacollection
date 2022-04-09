@@ -34,3 +34,21 @@
 2022-04-09 02:48:32 INFO: Loading: lemma
 2022-04-09 02:48:33 INFO: Loading: depparse
 2022-04-09 02:48:33 INFO: Done loading processors!
+2022-04-09 17:07:58 INFO: Loading these models for language: ta (Tamil):
+=======================================
+| Processor | Package                 |
+---------------------------------------
+| tokenize  | /root/tham...kenizer.pt |
+| mwt       | /root/tham...zhi_mwt.pt |
+| pos       | /root/tham...zhi_pos.pt |
+| lemma     | /root/tham...i_lemma.pt |
+| depparse  | /root/tham...epparse.pt |
+=======================================
+
+2022-04-09 17:07:58 INFO: Use device: gpu
+2022-04-09 17:07:58 INFO: Loading: tokenize
+2022-04-09 17:08:08 INFO: Loading: mwt
+2022-04-09 17:08:08 INFO: Loading: pos
+2022-04-09 17:08:10 INFO: Loading: lemma
+2022-04-09 17:08:10 INFO: Loading: depparse
+2022-04-09 17:08:11 INFO: Done loading processors!
