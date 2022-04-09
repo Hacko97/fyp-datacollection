@@ -300,9 +300,9 @@ from os.path import isfile, join
 #    if isfile(join(mypath,f)):
 #        onlyfiles.append(f)
 #print(depTag(sentence,depModel))
-#files = #['train_final.tsv']#,'valid_2.tsv']# 'train_new_61.tsv', 'train_new_83.tsv',  'train_new_76.tsv','train_new_26.tsv',  'train_new_86.tsv', 'train_new_69.tsv','train_new_38.tsv',  'train_new_27.tsv', 'train_new_8.tsv', 'train_new_46.tsv',  'train_new_28.tsv','train_new_34.tsv','train_new_44.tsv', 'train_new_25.tsv', ''train_new_15.tsv','train_new_32.tsv', 'train_new_66.tsv', 'train_new_79.tsv', 'train_new_20.tsv','train_new_71.tsv','train_new_30.tsv','train_new_63.tsv', 'train_new_1.tsv','train_new_2.tsv', 'train_new_87.tsv', 'train_new_3.tsv', 'train_new_43.tsv', 
+#files = #['train_final.tsv']#,'valid_2.tsv']# 'train_new_55.tsv', 'train_new_61.tsv', 'train_new_83.tsv',  'train_new_76.tsv','train_new_26.tsv',  'train_new_86.tsv', 'train_new_69.tsv','train_new_38.tsv',  'train_new_27.tsv', 'train_new_8.tsv', 'train_new_46.tsv',  'train_new_28.tsv','train_new_34.tsv','train_new_44.tsv', 'train_new_25.tsv', ''train_new_15.tsv','train_new_32.tsv', 'train_new_66.tsv', 'train_new_79.tsv', 'train_new_20.tsv','train_new_71.tsv','train_new_30.tsv','train_new_63.tsv', 'train_new_1.tsv','train_new_2.tsv', 'train_new_87.tsv', 'train_new_3.tsv', 'train_new_43.tsv', 
 onlyfiles = [
-'train_new_55.tsv', 'train_new_0.tsv', 'train_new_81.tsv', 'train_new_82.tsv', 'train_new_77.tsv', 'train_new_65.tsv',
+'train_new_0.tsv', 'train_new_81.tsv', 'train_new_82.tsv', 'train_new_77.tsv', 'train_new_65.tsv',
  'train_new_62.tsv', 'train_new_52.tsv', 'train_new_48.tsv', 'train_new_18.tsv', 'train_new_7.tsv', 'train_new_75.tsv',
   'train_new_19.tsv', 'train_new_35.tsv', 'train_new_31.tsv', 'train_new_21.tsv', 'train_new_68.tsv', 'train_new_12.tsv',
    'train_new_9.tsv', 'train_new_42.tsv', 'train_new_29.tsv', 'train_new_11.tsv', 'train_new_17.tsv', 'train_new_60.tsv',
