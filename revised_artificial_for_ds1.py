@@ -304,8 +304,7 @@ from os.path import isfile, join
 onlyfiles = [
 'train_new_0.tsv', 'train_new_81.tsv', 'train_new_82.tsv', 'train_new_77.tsv', 'train_new_65.tsv',
  'train_new_62.tsv', 'train_new_52.tsv', 'train_new_48.tsv', 'train_new_18.tsv', 'train_new_7.tsv', 'train_new_75.tsv',
-  'train_new_19.tsv', 'train_new_35.tsv', 'train_new_31.tsv', 'train_new_21.tsv', 'train_new_68.tsv', 'train_new_12.tsv',
-   'train_new_9.tsv', 'train_new_42.tsv', 'train_new_29.tsv', 'train_new_11.tsv', 'train_new_17.tsv' ]
+  'train_new_19.tsv', 'train_new_35.tsv', 'train_new_31.tsv', 'train_new_21.tsv', 'train_new_68.tsv', 'train_new_12.tsv' ]
 for file in onlyfiles:
         f1=open("./data/"+file,"r",encoding='UTF-8')
         f2 = open("./train/"+"train_"+file.split(".")[0]+".tsv", "a",encoding='UTF-8')

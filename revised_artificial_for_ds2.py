@@ -250,7 +250,7 @@ def depTag(data_input,nlp):
                     
                     if find_morphemes(word.text) != 0:
                         morphs = find_morphemes(word.text)
-                     
+                    
                         #print("inside finding")
                         if len(morphs) == 1 and len(morphs[0])>0:
                             #print("indng")
