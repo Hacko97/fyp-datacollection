@@ -300,9 +300,9 @@ from os.path import isfile, join
 #    if isfile(join(mypath,f)):
 #        onlyfiles.append(f)
 #print(depTag(sentence,depModel))
-#files = #['train_final.tsv']#,'valid_2.tsv']#  'train_new_68.tsv',  'train_new_21.tsv',  'train_new_31.tsv', 'train_new_35.tsv','train_new_13.tsv' ,'train_new_74.tsv', 'train_new_56.tsv', 'train_new_49.tsv','train_new_22.tsv','train_new_50.tsv','train_new_39.tsv','train_new_80.tsv', 'train_new_73.tsv','train_new_64.tsv', 'train_new_84.tsv',  'train_new_36.tsv',  'train_new_51.tsv', 'train_new_58.tsv', 'train_new_45.tsv', 'train_new_40.tsv', 'train_new_10.tsv','train_new_15.tsv','train_new_32.tsv', 'train_new_66.tsv', 'train_new_79.tsv', 'train_new_20.tsv','train_new_71.tsv','train_new_30.tsv','train_new_63.tsv', 'train_new_1.tsv','train_new_2.tsv', 'train_new_87.tsv', 'train_new_3.tsv', 'train_new_43.tsv', 
+#files = #['train_final.tsv']#,'valid_2.tsv']# 'train_new_12.tsv', 'train_new_68.tsv',  'train_new_21.tsv',  'train_new_31.tsv', 'train_new_35.tsv','train_new_13.tsv' ,'train_new_74.tsv', 'train_new_56.tsv', 'train_new_49.tsv','train_new_22.tsv','train_new_50.tsv','train_new_39.tsv','train_new_80.tsv', 'train_new_73.tsv','train_new_64.tsv', 'train_new_84.tsv',  'train_new_36.tsv',  'train_new_51.tsv', 'train_new_58.tsv', 'train_new_45.tsv', 'train_new_40.tsv', 'train_new_10.tsv','train_new_15.tsv','train_new_32.tsv', 'train_new_66.tsv', 'train_new_79.tsv', 'train_new_20.tsv','train_new_71.tsv','train_new_30.tsv','train_new_63.tsv', 'train_new_1.tsv','train_new_2.tsv', 'train_new_87.tsv', 'train_new_3.tsv', 'train_new_43.tsv', 
 #
-onlyfiles = ['train_new_12.tsv','train_new_57.tsv']
+onlyfiles = ['train_new_57.tsv']
 for file in onlyfiles:
         f1=open("./data/"+file,"r",encoding='UTF-8')
         f2 = open("./train/"+"train_"+file.split(".")[0]+".tsv", "a",encoding='UTF-8')
