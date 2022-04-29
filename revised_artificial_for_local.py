@@ -466,7 +466,7 @@ import gc
 #print(depTag(sentence,depModel))
 
 #files = #['train_final.tsv']#,'valid_2.tsv']#['train_new_53.tsv', 'train_new_85.tsv', 'train_new_47.tsv', 'train_new_20.tsv','train_new_71.tsv','train_new_30.tsv','train_new_63.tsv', 'train_new_1.tsv','train_new_2.tsv', 'train_new_87.tsv', 'train_new_3.tsv', 'train_new_43.tsv', 'train_new_84.tsv','train_new_4.tsv', 
-onlyfiles = [ 'train_new_72.tsv', 'train_new_57.tsv']
+onlyfiles = []
 
 #files = #['train_final.tsv']#,'valid_2.tsv']#['test.tsv','test_1.tsv','test_2.tsv','test_3.tsv','test_4.tsv','test_5.tsv','test_6.tsv','test_7.tsv','test_8.tsv','hiru news.txt']# 'train_new_20.tsv','train_new_71.tsv','train_new_30.tsv','train_new_63.tsv', 'train_new_1.tsv','train_new_2.tsv', 'train_new_87.tsv', 'train_new_3.tsv', 'train_new_43.tsv', 
 

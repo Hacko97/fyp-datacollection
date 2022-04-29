@@ -463,9 +463,9 @@ import gc
 #for f in listdir(mypath):
 #    if isfile(join(mypath,f)):
 #        onlyfiles.append(f)
-#print(depTag(sentence,depModel))
+#print(depTag(sentence,depModel)) 'train_new_41.tsv'
 
-onlyfiles = [ 'train_new_41.tsv' ]
+onlyfiles = [ ]
 for file in onlyfiles:
         gc.collect()
         f1=open("./data/"+file,"r",encoding='UTF-8')
