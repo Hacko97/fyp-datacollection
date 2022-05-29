@@ -7,7 +7,7 @@ The data augmentation mechanism is very useful to create lots of error sentences
 
 Files 
 1. revised_artificial_multiclass.py - This is grammar error generation python script for multiclass. 
-2. revised_artificial_multilabel.py - This is grammar error generation python script for multilabel.
+2. revised_artificial_for_colab.py, revised_artificial_for_colab2.py, revised_artificial_for_ds1.py, revised_artificial_for_ds2.py, revised_artificial_for_local.py revised_artificial_memory_optimized.py - This is grammar error generation python script for multilabel.
 3. multi_class_classification.ipynp - Finetuning process for grammar error detector using IndicBERT[^3] pretrained model.
 4. data/ - It contained grammatically correct sentences in the tsv file format.
 5. multiclass-train/ - It contained artificial error sentences for multiclass classfication task.
