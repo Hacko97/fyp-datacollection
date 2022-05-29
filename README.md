@@ -6,8 +6,8 @@ This is the development of a grammar error detector for the Tamil language using
 The data augmentation mechanism is very useful to create lots of error sentences from error-less sentences within a shortened time period. This section explained how to generate error sentences from grammatical sentences using a tool called [ThamizhiLIP](https://sarves.github.io/thamizhilip/) which was developed by Mr.Sarveswaran. It has the following functionalities Part of Speech tagging, dependency parsing[^1], and morphological anaysis[^2]. And it is open source. We get the source code from GitHub and change it for our task.
 
 Files 
-1. revised_artificial_multiclass.py - This is grammar error generation python script for multiclass. 
-2. revised_artificial_for_colab.py, revised_artificial_for_colab2.py, revised_artificial_for_ds1.py, revised_artificial_for_ds2.py, revised_artificial_for_local.py revised_artificial_memory_optimized.py - This is grammar error generation python script for multilabel. These are same code but used in different platform to generate the sentences.
+1. scripts/multiclass/revised_artificial_multiclass.py - This is grammar error generation python script for multiclass classification tasks. 
+2. scripts/multilabel - This is grammar error generation python scripts for multilabel classification. These are same code but used in different platform to generate the sentences.
 4. multi_class_classification.ipynp - Finetuning process for grammar error detector using IndicBERT[^3] pretrained model.
 5. grammatical sentences/ - It contained grammatically correct sentences in the tsv file format.
 6. error-annotated_corpus/multiclass - It contained artificial error sentences for multiclass classfication task.
