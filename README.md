@@ -8,10 +8,11 @@ The data augmentation mechanism is very useful to create lots of error sentences
 Files 
 1. scripts/multiclass/revised_artificial_multiclass.py - This is grammar error generation python script for multiclass classification tasks. 
 2. scripts/multilabel - This is grammar error generation python scripts for multilabel classification. These are same code but used in different platform to generate the sentences.
-4. multi_class_classification.ipynp - Finetuning process for grammar error detector using IndicBERT[^3] pretrained model.
-5. grammatical sentences/ - It contained grammatically correct sentences in the tsv file format.
-6. error-annotated_corpus/multiclass - It contained artificial error sentences for multiclass classfication task.
-7. error-annotated_corpus/multilabel - It contained artificical error sentences for the multilabel classification task.
+4. multi_class_classification.ipynp - Finetuning process for grammar error detector using IndicBERT[^3] pretrained model for multiclass classification task.
+5. multilabel_classification.ipynp - Finetuning process using IndicBERT pretrained model for multilabel classification task.
+6. grammatical sentences/ - It contained grammatically correct sentences in the tsv file format.
+7. error-annotated_corpus/multiclass - It contained artificial error sentences for multiclass classfication task.
+8. error-annotated_corpus/multilabel - It contained artificical error sentences for the multilabel classification task.
 
 [^1]: K. Sarveswaran and G. Dias, “ThamizhiUDp: A dependency parser for Tamil,” in Proceedings of the 17th International Conference on Natural Language
 Processing (ICON). Indian Institute of Technology Patna, Patna, India: NLP Association of India (NLPAI), Dec. 2020, pp. 200–207.
